@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+	<style type="text/css">
+			
+			body{
+				background-image: url(imagenes/Fondo_Web.jpg);
+				background-position : center;
+				background-repeat : no-repeat;
+				background-attachment : fixed;
+				font-family: "Arial";
+				height:1100px;
+				background-color:#99FF99;
+			}
+
+                a:link {text-decoration:none; color: white;}    /* unvisited link */
+                a:visited {text-decoration:none;} /* visited link */
+                a:hover {text-decoration:underline;}   /* mouse over link */
+                a:active {text-decoration:underline;}  /* selected link */
+                                
+				
+                
+				#links{
+                    margin-left:0px;
+                    float:left;
+                }
+				
+                #espacio{
+                    margin-left:40px;
+                    float:left;
+                }
+                                
+                #capa0{
+                    position: relative;
+                    left: 50%;
+					top:-8px;
+					margin-left:-490px;
+                    width: 980px;
+                    height: 30px;
+                    background-color:#333333;
+                }
+                        
+                #menu{
+                    position:relative;
+                    left:50%;
+					margin-left:-460px;
+                    width:920px;
+                    height:60px;
+                    top:63px;
+                    z-index: 2;
+                    border-radius: 20px;
+                    background-color:#E6E4E3;
+                    box-shadow: 2px 2px 5px #999;
+                }
+                               
+                          
+                #eng{
+                    position: absolute;
+                    float: left;
+                    
+                    margin-left:879px;
+                    margin-top:2.5px;
+                }
+                        
+                #esp{
+                    position:absolute;
+                    margin-left: 745px;
+                    top:2.5px;
+                }
+                        
+                #cat{
+                    position: absolute;
+                    width: 0px;
+                    heith: 0px;
+                    margin-left:632px;
+                    margin-top:2.5px;
+                } 
+                
+                #catalan{
+                    position: absolute;
+                    float: left;
+                    margin-left: 670px;
+                    margin-top: 7.5px;
+                    color:#ffffff;
+                }
+
+                        
+                #castellano{
+                    position: absolute;
+                    float: left;
+                    margin-left: 783px;
+                    margin-top: 7.5px;
+                    color:#ffffff;
+                }
+                
+                #ingles{
+                    position:aboslute;
+                    float: left;
+                    margin-left: 917px;
+                    margin-top: 7.5px;
+                    color: #ffffff;
+                }  
+                
+                #proximopartido{
+                    position:relative;
+                    left:50%;
+                    width:420px;
+                    height: 85px;
+                    top:40px;
+                    margin-left:-230px;
+                    border-radius: 20px;
+                    background-color:#333333;
+                    box-shadow: 2px 2px 5px #999;
+                }
+                
+                #proximopartido2{
+                    position:absolute;
+                    width:156.36px;
+                    height: 65px;
+                    top:8px;
+                    margin-left:164px;
+                    background-color:#423E3E;
+                }
+                
+                #proximopartido3{
+                    position:absolute;
+                    float: left;
+                    width:500px;
+                    height: 70px;
+                    top:-5px;
+                    margin-left:263px;
+                }
+                
+                
+                               
+                h1{
+                    color:red;
+                    text-align:center;
+                    position: absolute;
+                    margin-left: 275px;
+                    margin-top:115px;
+                }
+                
+                #principal{
+                    position: absolute;
+                    top: 10px;
+                    left: 30px;
+                }
+                #club{
+                    position:absolute;
+                    top:10px;
+                    left: 160px;
+                }
+                #tactual{
+                    position:absolute;
+                    text-align:center;
+                    top:6px;
+                    left: 280px;
+                }
+                #tanteriors{
+                    position:absolute;
+                    text-align:center;
+                    top:6px;
+                    left: 430px;
+                }
+                
+                #entradas{
+                    position:absolute;
+                    text-align:center;
+                    top:10px;
+                    left: 570px;
+                }
+                
+                #foro{
+                 
+                    position:absolute;
+                    text-align:center;
+                    top:10px;
+                    left: 700px;
+                }
+                
+                #tienda{
+                    position:absolute;
+                    text-align:center;
+                    top:10px;
+                    left: 820px;
+                }
+
+
+                #escut{
+                    position:absolute;
+                    top:12px;
+                    left: 35px;
+                }
+                
+                proxp { 
+					
+                    font-size: 10pt;
+					
+                }
+                
+                #imaesc{
+                    position:absolute;
+                    top: 5px;
+                    left: 5px;
+                }
+                
+                #inf{
+                    position: absolute;
+                    float:left;
+                    color: white;
+                    left: 10px;
+                    top: 5px;
+                }
+                #titol{
+                    position: absolute;
+                    float:left;
+                    color: green;
+                    left: 150px;
+                    top:5px;
+                    font-size: 16pt;
+                    text-shadow: 0.01em 0.01em 0.02em #333
+                }
+                
+                vs{ 
+                    position:absolute;
+                    top: 25px;
+                    left: 70px;
+                    font-size: 13pt;
+                    color: white; 
+                    font-weight: normal; 
+                }
+                
+                #imaesc2{
+                    position:absolute;
+                    top: 5px;
+                    right: 5px;
+                }
+                
+                #linea1{
+                    float: left;
+                    position: absolute;
+                    
+                    top:6px;
+                    width: 1px;
+                    height: 20px;
+                    margin-left: 865px;
+                    background-color:#ffffff;
+                }
+                #linea2{
+                    float: left;
+                    position: absolute;
+                    
+                    top:6px;
+                    width: 1px;
+                    height: 20px;
+                    margin-left: 735px;
+                    background-color:#ffffff;
+                }
+                
+                #publicidadequipo{
+                    position:absolute;
+                    
+                    width:236px;
+                    height: 96px;
+                    top:15px;
+                    margin-left:700px;
+                    border-radius: 15px;
+                    background-color:#000000;
+                }
+                txt1{ 
+                    position: absolute;
+                    font-size: 12pt;
+                    color: red;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+                
+                txt2{ 
+                    font-size: 10pt;
+                }
+                #imagenpublicidadequipo{
+                    position:absolute;
+                    
+                    left: 100px;
+                }
+                
+                #botonentradas{
+                    position:absolute;
+                    top: 53px;
+                    left: 325px;
+                }
+                
+                #buscador{
+                    position:absolute;
+                    
+                    width: 233px;
+                    top:115px;
+                    margin-left:702px;
+                }
+				#imagenlupa{
+					position:relative;
+					top:-24px;
+				}
+                
+                
+				
+				
+			#capa1{
+				position: relative;
+				top: 255px;
+                left: 50%;
+                width: 495px;
+				height: 470px;
+				border-radius: 15px;
+				border: 3px;
+                margin-top: auto;
+                margin-left: -440px;
+				background-color:#ADBA2D;
+			}
+			#capa2{
+				position:relative;
+				float:center;
+				top:-215px;
+				width:495px;
+				height:207px;
+				margin-left:auto;
+                background-color:#313131;
+			}
+			#capa3{
+				position:relative;
+				
+				top:5px;
+				
+				margin-left:10px;
+                background-color:#BEBEC0;
+			}
+			
+			#capa17{
+				position:relative;
+				float:center;
+				top:-260px;
+				width:495px;
+				height:75px;
+				
+                background-color:#BEBEC0;
+			}
+			
+			#capa4{
+				position:relative;
+				float:center;
+				top:-240px;
+				width:495px;
+				height:225px;
+				margin-left:auto;
+                background-color:#313131;
+			}
+			#capa5{
+				position:relative;
+				left:28px;
+				width:440px;
+				height:225px;
+                background-color:#BEBEC0;
+			}
+			
+			#capa6{
+				position:relative;
+				float:center;
+				top:-10px;
+				width:180px;
+				height:90px;
+                background-color:#313131;
+			}
+			#capa7{
+				position:relative;
+				border-radius: 15px;
+				top:-215px;
+				left:50%;
+				margin-left:73px;
+				width:370px;
+				height:580px;
+                background-color:#D7D7D7;
+			}
+			#capa8{
+				position:relative;
+				border-radius: 15px;
+				top:5px;
+				width:360px;
+				height:185px;
+			}
+			#capa9{
+				position:relative;
+				top:3px;
+				float:center;
+				width:338px;
+				height:375px;
+                background-color:#B7B7B7;
+			}
+			#capa10{
+				position:relative;
+				float:center;
+				width:225px;
+				
+				text-align:justify;
+                background-color:#313131;
+			}
+			#capa11{
+				position: relative;
+				top: -239px;
+                left: 50%;
+                width: 500px;
+				height: 270px;
+				border-radius: 15px;
+				margin-left: -440px;
+				background-color:#ADBA2D;
+			}
+			#capa12{
+				position:relative;
+				
+				width:500px;
+				height:260px;
+                background-color:#BEBEC0;
+			}
+			#capa13{
+				position:relative;
+				float:right;
+				top:-10px;
+				right:13px;
+				width:133px;
+				height:240px;
+                background-color:#313131;
+			}
+			#capa14{
+				position: relative;
+				top:-470px;
+				left:50%;
+				margin-left:68px;
+                width: 375px;
+				height: 240px;
+				border-radius: 15px;
+				background-color:#ADBA2D;
+			}
+			#capa15{
+				position:relative;
+				top:-10px;
+				width:375px;
+				height:220px;
+                background-color:#BEBEC0;
+			}
+			#capa16{
+				position:relative;
+				float:center;
+				top:-430px;
+				left:50%;
+				margin-left: -440px;
+				width:885px;
+				height:80px;
+				padding-bottom:0px;
+				border-radius: 15px;
+                background-color:#313131;
+			}
+			
+			#submenu{
+                    position: relative;
+                    left:50%;
+					top:220px;
+                    width: 980px;
+                    height: 20px;
+					
+					margin-left:-491px;
+                    padding-bottom:0px;
+                    background-color:#333333;
+                    border: 1px solid black;
+                
+            }
+
+			#pie{
+                    float: left;
+                    position: relative;
+                    left: 50%;
+                    width: 980px;
+                    height: 61px;
+                    top: 1350px;
+                    margin-left: -980px;
+                    padding-bottom:0px;
+                    background-color:#333333;
+                    
+            }
+			#caparriba{
+				float: left;
+                position: relative;
+                left: 50%;
+				top:-8px;
+                width: 978px;
+                height: 236px;
+				
+                margin-left: -490px;
+			
+				background-color:white;
+                
+			}
+			
+			
+			.thumbnail {position: relative; }
+			.thumbnail:hover{ background-color: transparent; z-index: 50; }
+			.thumbnail span{ /* Estilos para la imagen agrandada */
+				position: absolute;
+				background-color: black;
+				padding: 5px;
+				left:-1000px;
+				top:-500px;
+				padding-bottom:0px;
+				visibility: hidden;
+				color: #ffffff;
+			}
+			.thumbnail span img{ border-width: 0; padding: 2px; }
+			.thumbnail:hover span{ visibility: visible; top:-300px; left: -300px; }
+			
+			b3{
+				position:relative;
+				left:12px;
+			}
+			b4{
+				position:relative;
+				left:12px;
+				top:-11px;
+			}
+			n3{
+				position:relative;
+				left:12px;
+				top:-215px;
+				
+			}
+			
+			a:link {color:black;} 
+			a:visited {color:black;}
+			a:hover {text-decoration:underline; color:white;}
+			a:active {color:black;}
+	</style>
+
+	</head>
+	<body>
+	
+	
+		
+		<div id="capa0">
+      
+                        <div id="eng">
+                                <img   src="imagenes/eng.png" width="25" alt="No es veu,eng" />
+                        </div>
+                        <div id="ingles">
+                            <TD  align="center" rowspan="1"><a href="" target="_blank"><font color="white">Ingles</font></a></TD>
+                        </div>
+                        
+                        <div id="linea1">
+                        </div>
+                        
+                        <div id="esp">
+                                <img   src="imagenes/esp.png" width="25" alt="No es veu,eng" />
+                        </div>
+                        <div id="castellano">
+							<TD  align="center" rowspan="1"><a href="" target="_blank"><font color="white">Castellano</font></a></TD>
+                        </div>
+                        
+                        <div id="linea1">
+                        </div>
+                        
+                        <div id="linea2">
+                        </div>
+                        
+                        <div id="cat">
+                                <img   src="imagenes/cat.png" width="25" alt="No es veu,cat" />
+                        </div>
+                        <div id="catalan">
+                            <TD  align="center" rowspan="1"><a href="" target="_blank"><font color="white">Catalan</font></a></TD> 
+                        </div>
+                </div>
+				
+                <div id="caparriba">
+					<div id="buscador">
+						<form name="dadesUsuari">
+							<input type="text" size="28" value="buscar" name="buscador" />
+							<div id="imagenlupa">
+								<a href="" target="_blank">
+								<img border="0" align="right" src="imagenes/BUSCATOR.jpg"  height="22"alt="No es veu el fondo"/>   
+								</a>
+							</div>
+						</form>
+					</div>
+					<div id="titol">
+                    <p>Club de <br>Hockey <br>Femenino<br> Vilanova</p>
+					</div>
+					<div id="escut">
+					<img border="0" src="imagenes/escut.png" width="105.5" height="127"alt="No es veu l'escut"/>
+					</div>
+					
+					<div id="proximopartido">
+						<div id="inf">
+							<TD  align="right" rowspan="1">Fecha: &nbsp;&nbsp;&nbsp;13/04/2013</TD>                       
+							<TD  align="right" rowspan="1"><br>Hora: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20:00</br></TD> 
+							<TD  align="center">Lugar: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Albericia</TD>
+							<TD  align="center"><br>Canal: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tv3</br></TD>
+						</div>
+						<div id="proximopartido2">
+							<div id="imaesc">
+							<img border="0" src="imagenes/escut.png" width="50" height="55"alt="No es veu l'escut 1"/>
+							</div>
+							<TD  align="center" rowspan="1"><vs>V.S</vs></TD>
+							<div id="imaesc2">
+							<img border="0" src="imagenes/escut2.png" width="50" height="55"alt="No es veu l'escut 2"/>
+							</div>
+						</div>
+						<div id="botonentradas">
+							<input type="button"  value="Entradas" />
+						</div>
+					</div>
+					<div id="proximopartido3">
+							<p><h3>Proximo partido:<proxp>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jornada 19</proxp></h3></p> 
+					</div>
+					
+					<div id="publicidadequipo">
+					
+									<a href="" target="_blank">
+
+						<txt1>Merchandising<txt2><br><br>50% <br>2ª equipación</txt1>  
+						<div id="imagenpublicidadequipo">
+						</a>
+							<img   src="imagenes/eqq.png" width="130" alt="No es veu la imatge" />
+						</div>
+					</div>
+					
+					
+					<div id="menu">
+						<div id="principal">
+							<a href=""> <img   src="imagenes/menu/principal.png" width="90" height="41" alt="Principal"/></a>
+						</div>
+						
+						<div id="club">
+							<a href="secundaria.html"><img src="imagenes/menu/menu2/club.png" width="75" height="41" onmouseover="this.src='imagenes/menu/club.png';" onmouseout="this.src='imagenes/menu/menu2/club.png';" alt="Club"/></a>
+						</div>
+						
+						<div id="tactual">
+							<a href=""><img src="imagenes/menu/menu2/actual.png" width="95" height="50" onmouseover="this.src='imagenes/menu/actual.png';" onmouseout="this.src='imagenes/menu/menu2/actual.png';" alt="Actual"/></a>
+						
+						</div>
+						
+						<div id="tanteriors">
+							<a href=""><img src="imagenes/menu/menu2/anteriores.png" width="95" height="50" onmouseover="this.src='imagenes/menu/anteriores.png';" onmouseout="this.src='imagenes/menu/menu2/anteriores.png';" alt="Anteriores"/></a>
+						
+						</div>
+						
+						<div id="entradas">
+							<a href=""><img src="imagenes/menu/menu2/entradas.png" width="95" height="41" onmouseover="this.src='imagenes/menu/entradas.png';" onmouseout="this.src='imagenes/menu/menu2/entradas.png';" alt="Entradas"/></a>
+						
+						</div>
+						
+						<div id="foro">
+							<a href="formulario.html"><img src="imagenes/menu/menu2/foro.png" width="85" height="41" onmouseover="this.src='imagenes/menu/foro.png';" onmouseout="this.src='imagenes/menu/menu2/foro.png';" alt="Foro"/></a>
+						
+						</div>
+						
+						<div id="tienda">
+							<a href=""><img src="imagenes/menu/menu2/tienda.png" width="85" height="41" onmouseover="this.src='imagenes/menu/tienda.png';" onmouseout="this.src='imagenes/menu/menu2/tienda.png';" alt="Tienda"/></a>
+						
+						</div>
+					</div>
+				</div>	
+                <div id="submenu">
+				</div>                
+                
+                    <div  id="pie">
+
+                        <form>
+                            <a href="http://www.youtube.es" target="_blank">
+                                <img  align="right" vspace="15" hspace="10" border="0" src="imagenes/Youtube Logo.png" width="25" alt="No es veu,youtube" />
+                            </a>
+                          
+                            <a href="http://signup.rss.com/" target="_blank">
+                                <img  align="right" vspace="15" hspace="10" border="0" src="imagenes/rss-logo.png" width="25" alt="No es veu,linkedin"/>
+                            </a>
+                            <a href="http://twitter.com/" target="_blank">
+                                <img  align="right" vspace="15" hspace="10" border="0" src="imagenes/twitter-logo-11.png" width="40" alt="No es veu,twitter" />
+                            </a>
+                            <a href="http://www.facebook.com/" target="_blank">
+                                <img  align="right" vspace="15" hspace="10" border="0" src="imagenes/logo_facebook_f20convertido1.png" width="25" alt="No es veu,facebook" />
+                            </a>
+                        </form>
+							
+                        <div id="links">
+                            
+                            <h3>
+                                <div id="espacio"><a href="" target="_blank">©Copyright</a></div>
+                                <div id="espacio"><a href="" target="_blank">Nota legal</a></div>
+                                <div id="espacio"><a href="" target="_blank">Contacto</a></div>
+                                <div id="espacio"><a href="" target="_blank">Accesibilidad</a></div>
+                            </h3>
+                        </div>
+                    </div>
+					
+					
+					
+					
+	
+	
+		<div id="capa1">
+			<div id="n3"><b><a href=""><font color="white" size=4><n3> Notícias </n3></font></a></b></div>
+			
+			<div id="capa2" align="center">
+				<a href=""><img src="imagenes/fotoprincipal1.jpg" width="310" height="207" alt="No se puede ver la imagen principal"/></a>
+				
+			</div>
+			<div id="capa17">
+				
+					<div id="capa3">
+						<h3 align=left> &nbsp;&nbsp;Espectáculo, sensacional, apasionante y a la final!</h3>
+					
+						<font size=2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El Vilanova supera con creces a Reus con tres goles de Silvia y uno de Alba.</p></font>
+					</div>
+				
+			</div>
+			<div id="capa4">
+				<div id="capa5">
+					<table  cellspacing="-1">
+						<tr>
+						<td>
+							<div id="capa6" align="center">
+								<img src="imagenes/noticia1.jpg" width="148" height="90" alt="No se puede ver la imagen noticia"/>
+							</div></td>
+						<td>
+							<font size=1><p align=left>11/01/2013</p></font>
+							<font size=1><p align=justify>Xavier Sala: "Han hecho un gran partido las chicas. Van a pelear por ganar la final y poder traer a casa la copa." &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><a href="" >Ver más</a></u></font></p>
+							<font size=1></font>
+						</td>
+						</tr>
+						<tr>
+						<td>
+							<div id="capa6" align="center">
+								<img src="imagenes/noticia2.jpg" width="148" height="90" alt="No se puede ver la imagen noticia"/>
+							</div></td>
+						<td>
+							<font size=1><p align=left>11/01/2013</p></font>
+							<font size=1><p align=justify>"Debemos destacar la ambición de las jugadoras."</p>
+							<font size=1><p align=right><u><a href="" >Ver más</a></u></p></font>
+						</td>
+						</tr>
+					</table> 
+				</div>
+			</div>
+		</div>
+		
+		<div id="capa7" align="center" >
+			<div id="capa8" align="center" >
+				<img src="imagenes/imagen_proy_3.jpg" width="360" height="184" style="border-radius:12px;" alt="No se puede ver la imagen publicidad"/>
+			</div>
+			<div id="capa9" align="center" >
+				<table>
+						<tr>
+						<td>
+							<img src="imagenes/escudofaceb.png" width="65" height="70" alt="No se puede ver la imagen facebook"/>
+						<td>
+							<div id="capa10" align="center" >
+								<p><font size=1 color="#2758A2">CHFVilanova</font><font size=1 color="white"> Nuestra flamante Clara Vega recibe el premio al mejor gol 2012.</font>
+								<a href="http://www.facebook.com/" target="_blank"><font size=1 color="#2758A2">#CHFVilanova</font></p></a>
+							</div>
+						</td>
+						</tr>
+						<tr>
+						<td>
+							<img src="imagenes/escudofaceb.png" width="65" height="70" alt="No se puede ver la imagen facebook"/>
+						<td>
+							<div id="capa10" align="center">
+								<p><font size=1 color="#2758A2">CHFVilanova</font><font size=1 color="white"> Silvia Terraza atiende a los medios en la gala del premio Nacsport.</font>
+								<a href="http://www.facebook.com/" target="_blank"><font size=1 color="#2758A2">#CHFVilanova         #Nacsport</font></p></a>
+							</div>
+						</td>
+						</tr>
+						<tr>
+						<td>
+							<img src="imagenes/escudotwt.png" width="70" height="75" alt="No se puede ver la imagen twitter"/>
+						<td>
+							<div id="capa10" align="center" >
+								<p></font><font size=1 color="white"> Estoy muy contenta. Yo lo que quería era jugar, saltar al campo y tener mi oportunidad", Clara Vega.</font>
+								<a href="http://www.twitter.com/" target="_blank"><font size=1 color="#2758A2">#CHFVilanova</font></p></a>
+							</div>
+						</td>
+						</tr>
+						<tr>
+						<td>
+							<img src="imagenes/escudofaceb.png" width="65" height="70" alt="No se puede ver la imagen facebook"/>
+						<td>
+							<div id="capa10" align="center" >
+								<p><font size=1 color="#2758A2">CHFVilanova</font><font size=1 color="white"> Hoy tenemos otro cumpleaños. ¡¡¡Muchas felicidades, <font color="#2758A2">@Carla Rebecchi</font>!!!</font>
+								<a href="http://www.facebook.com/" target="_blank"><font size=1 color="#2758A2">#CHFVilanova         #Nacsport</font></p></a>
+							</div>
+						</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+		
+		<div id="capa11">
+			<div id="b3"><b><a href=""><font color="white" size=4><b3> Vídeos </b3></font></a></b></div>
+			<div id="capa12" align=center ><br>
+				<iframe width="328" height="218" src="http://www.youtube.com/embed/k_VvtwePHi8" frameborder="0" allowfullscreen></iframe>
+				<div id="capa13">	
+					
+					<table cellspacing="10">
+						<tr><td><iframe width="107" height="63" src="http://www.youtube.com/embed/dfvX4NIq7JI" frameborder="0" allowfullscreen></iframe></td></tr>
+						<tr><td><iframe width="107" height="63" src="http://www.youtube.com/embed/u_9CJijtgyU" frameborder="0" allowfullscreen></iframe></td></tr>
+						<tr><td><iframe width="107" height="63" src="http://www.youtube.com/embed/C20jxxxoQ40" frameborder="0" allowfullscreen></iframe></td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div id="capa14">
+			<div id="b3"><b><a href=""><font color="white" size=4><b4> Imágenes </b4></font></a></b></div>
+			<div id="capa15" align=center>
+				<table cellspacing="10">
+						<tr>
+						<td>
+							<a class="thumbnail" href="#thumb"><img src="imagenes/foto1.jpg" width="160" height="83" alt="No se puede ver la imagen equipo1" /><span><img src="imagenes/foto1.jpg" /><br /></span></a>
+						<td>
+							<a class="thumbnail" href="#thumb"><img src="imagenes/foto2.jpg" width="160" height="83" alt="No se puede ver la imagen equipo2" /><span><img src="imagenes/foto2.jpg" /><br /></span></a>
+						</td>
+						</tr>
+						<tr>
+						<td>
+							<a class="thumbnail" href="#thumb"><img src="imagenes/foto3.jpg" width="160" height="83" alt="No se puede ver la imagen equipo3" /><span><img src="imagenes/foto3.jpg" /><br /></span></a>
+						<td>
+							<a class="thumbnail" href="#thumb"><img src="imagenes/foto4.jpg" width="160" height="83" alt="No se puede ver la imagen equipo4" /><span><img src="imagenes/foto4.jpg" /><br /></span></a>
+							
+						</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+
+		<div id="capa16" align="center" >
+			<table  cellspacing="4">
+				<tr>
+					<td><img src="imagenes/adidas.png" width="100" height="55" alt="No se puede ver la imagen adidas"/></td>
+					<td><img src="imagenes/redbull.png" width="135" height="55" alt="No se puede ver la imagen redbull"/><td>
+					<td><img src="imagenes/tv3.png" width="100" height="80" alt="No se puede ver la imagen tv3"/><td>
+					<td><img src="imagenes/caixa.png" width="215" height="65" alt="No se puede ver la imagen laCaixa"/><td>
+					<td><img src="imagenes/salle.png" width="180" height="80" alt="No se puede ver la imagen laSalle"/><td>
+				</tr>
+			</table>
+		</div>
+				
+	</body>
